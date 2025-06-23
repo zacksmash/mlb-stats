@@ -69,7 +69,7 @@ readonly class MlbStatsPendingRequest
     private function validateEndpoint(): void
     {
         if (empty(trim($this->endpoint))) {
-            throw new InvalidArgumentException('Endpoint cannot be empty.');
+            throw new \InvalidArgumentException('Endpoint cannot be empty.');
         }
     }
 
