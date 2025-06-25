@@ -1,0 +1,66 @@
+<?php
+
+namespace Zacksmash\MlbStats\Enums;
+
+enum GroupBies: string
+{
+    case PLAYER = 'PLAYER';
+    case PITCHER = 'PITCHER';
+    case BATTER = 'BATTER';
+    case VENUE = 'VENUE';
+    case TEAM = 'TEAM';
+    case BATTING_TEAM = 'BATTING_TEAM';
+    case FIELDING_TEAM = 'FIELDING_TEAM';
+    case SPORT = 'SPORT';
+    case BATTING_SPORT = 'BATTING_SPORT';
+    case FIELDING_SPORT = 'FIELDING_SPORT';
+    case LEAGUE = 'LEAGUE';
+    case BATTING_LEAGUE = 'BATTING_LEAGUE';
+    case FIELDING_LEAGUE = 'FIELDING_LEAGUE';
+    case DIVISION = 'DIVISION';
+    case BATTING_DIVISION = 'BATTING_DIVISION';
+    case FIELDING_DIVISION = 'FIELDING_DIVISION';
+    case SEASON = 'SEASON';
+    case POSITION = 'POSITION';
+    case STAT_GROUP = 'STAT_GROUP';
+    case GAME = 'GAME';
+    case PITCH_TYPE = 'PITCH_TYPE';
+    case EVENT_TYPE = 'EVENT_TYPE';
+    case PITCH_CODE = 'PITCH_CODE';
+    case BATTING_ORDER = 'BATTING_ORDER';
+    case PITCH_HAND = 'PITCH_HAND';
+    case BAT_SIDE = 'BAT_SIDE';
+    case MONTH = 'MONTH';
+    case DAY_OF_WEEK = 'DAY_OF_WEEK';
+    case DAY_NIGHT = 'DAY_NIGHT';
+    case GAME_TYPE = 'GAME_TYPE';
+    case HOME_AWAY = 'HOME_AWAY';
+    case BASE_STATE = 'BASE_STATE';
+    case RISP = 'RISP';
+    case INNING = 'INNING';
+    case COUNT_BALLS = 'COUNT_BALLS';
+    case COUNT_STRIKES = 'COUNT_STRIKES';
+    case COUNT_OUTS = 'COUNT_OUTS';
+    case HIT_TRAJECTORY = 'HIT_TRAJECTORY';
+    case PITCH_NUMBER = 'PITCH_NUMBER';
+    case AT_BAT_NUMBER = 'AT_BAT_NUMBER';
+    case RUNNER_FIRST = 'RUNNER_FIRST';
+    case RUNNER_SECOND = 'RUNNER_SECOND';
+    case RUNNER_THIRD = 'RUNNER_THIRD';
+    case CATCHER = 'CATCHER';
+    case FIRST_BASEMAN = 'FIRST_BASEMAN';
+    case SECOND_BASEMAN = 'SECOND_BASEMAN';
+    case SHORTSTOP = 'SHORTSTOP';
+    case THIRD_BASEMAN = 'THIRD_BASEMAN';
+    case LEFT_FIELDER = 'LEFT_FIELDER';
+    case CENTER_FIELDER = 'CENTER_FIELDER';
+    case RIGHT_FIELDER = 'RIGHT_FIELDER';
+    case DESIGNATED_HITTER = 'DESIGNATED_HITTER';
+    case DEFENSIVE_ALIGNMENT = 'DEFENSIVE_ALIGNMENT';
+    case SITUATION_CODE = 'SITUATION_CODE';
+    case OPPONENT_TEAM = 'OPPONENT_TEAM';
+    case HIT_DIRECTION = 'HIT_DIRECTION';
+    case PITCH_ZONE = 'PITCH_ZONE';
+    case DATE = 'DATE';
+
+}
