@@ -2,13 +2,15 @@
 
 namespace Zacksmash\MlbStats;
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
 use Zacksmash\MlbStats\Attributes\RequiresAllOf;
 use Zacksmash\MlbStats\Attributes\RequiresOneOf;
+use Zacksmash\MlbStats\Params\HasHydrate;
 
 abstract class MlbStatsRequest
 {
+    use HasHydrate;
+
     protected string $endpoint = '';
 
     protected string $version = 'v1';
@@ -71,10 +73,11 @@ abstract class MlbStatsRequest
                 'endpoint',
                 'version',
                 'method',
+                'headers',
             ])->contains($prop->name);
         });
 
-        // $this->validate($props, $reflection);
+        $this->validate($props, $reflection);
 
         $params = collect([]);
 
